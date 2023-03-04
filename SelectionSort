@@ -1,0 +1,70 @@
+[22,27,16,2,18,6] -> Insertion Sort
+Aşamaları:
+
+1) 0. ve 1. index kıyaslanır 
+   [22,27,16,2,18,6] --->  [22,27,16,2,18,6]
+
+2) 1. index ile 2. index kıyaslanır(a)
+   0. index ile 1. index kıyaslanır(b)
+   
+                      a                      b
+   [22,27,16,2,18,6] ---> [22,16,27,2,18,6] --->  [16,22,27,2,18,6]
+   
+3) 2. index ile 3. index kıyaslanır(a)
+   1. index ile 2. index kıyaslanır(b)
+   0. index ile 1. index kıyaslanır(c)
+   
+                      a                       b                      c
+   [16,22,27,2,18,6] --->  [16,22,2,27,18,6] ---> [16,2,22,27,18,6] ---> [2,16,22,27,18,6]
+   
+4) 3. index ile 4. index kıyaslanır(a)
+   2. index ile 3. index kıyaslanır(b)
+   
+                      a                      b
+   [2,16,22,27,18,6] ---> [2,16,22,18,27,6] ---> [2,16,18,22,27,6]
+   
+5) 4. index ile 5. index kıyaslanır(a)
+   3. index ile 4. index kıyaslanır(b)
+   2. index ile 3. index kıyaslanır(c)
+   1. index ile 2. index kıyaslanır(d)
+                      
+                      a                      b                      c                      d
+   [2,16,18,22,27,6] ---> [2,16,18,22,6,27] ---> [2,16,18,6,22,27] ---> [2,16,6,18,22,27] ---> [2,6,16,18,22,27]
+   
+   
+   sıralama tamamlandı...
+   ********************
+   
+   Time complexity:
+   
+   Best Case--> O(n)
+   Average and Worst Case --> O(n^2)
+   **********************
+   Sorting işleminden sonra 18 sayısı sıralı dizide ortada bulunduğundan Average case kapsamına girer.
+   **********************
+   
+   [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız. 
+   
+   1) 0. index ile tüm indexler kıyaslanır
+      [7,3,5,8,2,9,4,15,6] ---> [2,3,5,8,7,9,4,15,6]
+   2) 1. index kıyaslanır
+      [2,3,5,8,7,9,4,15,6] ---> [2,3,5,8,7,9,4,15,6] (yerinde kalır) 
+   3) 2. index kıyaslanır
+      [2,3,5,8,7,9,4,15,6] ---> [2,3,4,8,7,9,5,15,6]
+   4) 3. index
+      [2,3,4,8,7,9,5,15,6] ---> [2,3,4,5,7,9,8,15,6]
+   5) 4. index
+      [2,3,4,5,7,9,8,15,6] ---> [2,3,4,5,6,9,8,15,7]
+   6) 5. index
+      [2,3,4,5,6,9,8,15,7] ---> [2,3,4,5,6,7,8,15,9]
+   7) 6. index
+      [2,3,4,5,6,7,8,15,9] ---> [2,3,4,5,6,7,8,15,9] (yerinde kalır)
+   8) 7. index
+      [2,3,4,5,6,7,8,15,9] ---> [2,3,4,5,6,7,8,9,15]
+      
+      sıralama tamamlandı....
+   
+   
+   
+   
+   
